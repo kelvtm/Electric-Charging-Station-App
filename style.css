@@ -54,7 +54,7 @@ main {
   font-style: normal;
 }
 .image-1 {
-  width: 60%;
+  width: 50%;
   -webkit-mask-image: linear-gradient(to right, black 70%, transparent);
   mask-image: linear-gradient(to left, black 70%, transparent);
 }
@@ -63,5 +63,120 @@ main {
   display: flex;
   justify-content: flex-end; /* horizontal */
   align-items: flex-start; /* vertical */
-  height: 100vh;
+  height: 70vh;
+}
+
+/* Dark Mode Toggle */
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+  z-index: 100;
+  position: fixed;
+  right: 25px;
+  top: 30px;
+}
+
+.theme-switch-wrapper span {
+  margin-right: 10px;
+  font-size: 1rem;
+}
+
+.toggle-text {
+  position: relative;
+  top: -4px;
+  right: 5px;
+  color: var(--on-background);
+}
+
+.theme-switch {
+  display: inline-block;
+  height: 34px;
+  position: relative;
+  width: 60px;
+}
+
+.theme-switch input {
+  display: none;
+}
+
+.slider {
+  background: #ccc;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: 0.4s;
+}
+
+.slider::before {
+  background: #fff;
+  bottom: 4px;
+  content: "";
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: 0.4s;
+  width: 26px;
+}
+
+input:checked + .slider {
+  background: var(--primary-color);
+}
+
+input:checked + .slider::before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round::before {
+  border-radius: 50%;
+}
+
+.fa-solid {
+  font-size: 30px;
+  margin-right: 5px;
+  color: var(--primary-color);
+}
+
+/* Navigation */
+nav {
+  /* z-index: 10; */
+  /* position: fixed; */
+  font-family: "Oswald", sans-serif;
+  /* font-size: 24px; */
+  /* white-space: nowrap; */
+  letter-spacing: 3px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 25px;
+  /* width: 100vw; */
+  /* background: rgb(255 255 255 / 50%); */
+}
+
+.nav-link {
+  text-decoration: ;
+}
+a {
+  margin-right: 25px;
+  color: var(--primary-color);
+  text-decoration: none;
+  border-bottom: 3px solid transparent;
+  font-weight: bold;
+}
+
+a:hover,
+a:focus {
+  color: var(--on-background);
+  border-bottom: 3px solid;
+}
+
+#nav a.active {
+  border-bottom: 2px solid #34dc3b; /* Neon green underline */
+  padding-bottom: 4px; /* space between text and line */
 }

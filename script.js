@@ -8,3 +8,9 @@ function select(cls, id) {
   var panel = document.getElementById(id);
   panel.style.display = "block";
 }
+// const links = document.querySelectorAll("nav a");
+// links.forEach((link) => {
+//   if (link.href === window.location.href) {
+//     link.classList.add("border-b-2", "border-green-500", "pb-1");
+//   }
+// });

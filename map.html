@@ -14,7 +14,7 @@
     <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
   </head>
-  <body>
+  <body id="">
     <div class="grid-container">
       <header>
         <span class="heading">Bike Pump Finder</span>
@@ -26,14 +26,39 @@
         >
           Home
         </button>
-        <button class="w3-button w3-block LOw3-blue">Nearby Charger</button>
+        <button
+          onclick="location.href='map.html'"
+          class="w3-button w3-block w3-blue"
+        >
+          Find Station
+        </button>
         <button
           onclick="location.href='menubar.html'"
           class="w3-button w3-block w3-blue"
         >
           Station Option
         </button>
+        <button
+          onclick="location.href='#frame-3'"
+          class="w3-button w3-block w3-blue"
+        >
+          Review
+        </button>
+        <button
+          onclick="location.href='#frame-4'"
+          class="w3-button w3-block w3-blue"
+        >
+          Customer Service
+        </button>
       </nav>
+
+      <!-- <nav id="nav">
+        <a href="index.html" class="active">HOME</a>
+        <a href="map.html">Find&nbsp;Station</a>
+        <a href="menubar.html">Station&nbsp;Option</a>
+        <a href="#frame-3">About&nbsp;us</a>
+        <a href="#frame-4">Customer&nbsp;Service</a>
+      </nav> -->
       <main>
         <iframe
           src="https://arcg.is/1vDC1"

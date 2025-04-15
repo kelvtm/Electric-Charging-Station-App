@@ -4,71 +4,102 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+     <!-- Favicon -->
+     <link rel="icon" type="image/png" href="favicon.png">
+     <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+    <!-- AOS css-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <title>Bike Pump Finder</title>
 
     <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="/style.css" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <!-- Tailwind Library -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <!-- font awsome JS -->
+    <script src="https://kit.fontawesome.com/e9b5b0ea26.js" crossorigin="anonymous"></script>
+    <!-- AOS.JS -->
+   <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script defer src="index.js"></script>
+    <!-- Navigation Script -->
+    <script defer src="navbar.js"></script>
 
     <!-- import the webpage's javascript file -->
-    <script src="/script.js"></script>
+    <script src="/script.js" defer></script>
   </head>
   <body>
     <div class="grid-container">
       <header>
-        <span class="heading">Bike Pump Finder</span>
+        <h1 class="heading">
+          <span style="color: var(--secondary-color)">EV</span>
+          Charging Station
+        </h1>
+        <h2>Power up your journey with fast, reliable EV charging—available 24/7 at your fingertips.</h2>
       </header>
-
+      <!-- dark month switch -->
+    <div class="theme-switch-wrapper">
+      <span id="toggle-icon">
+        <span class="all-tx-color">Light Mode</span>
+        <i class="fas fa-sun"></i>
+      </span>
+      <label class="theme-switch">
+        <input type="checkbox" />
+        <div class="slider round"></div>
+      </label>
+    </div>
       <nav>
         <button
           onclick="location.href='index.html'"
-          class="w3-button w3-block w3-blue"
+          class="btn-el"
         >
           Home
         </button>
         <button
           onclick="location.href='map.html'"
-          class="w3-button w3-block w3-blue"
+          class="btn-el"
         >
           Find Station
         </button>
         <button
           onclick="location.href='menubar.html'"
-          class="w3-button w3-block w3-blue"
+          class="btn-el"
         >
           Station Option
         </button>
         <button
-          onclick="location.href='#frame-3'"
-          class="w3-button w3-block w3-blue"
-        >
-          Review
-        </button>
-        <button
           onclick="location.href='#frame-4'"
-          class="w3-button w3-block w3-blue"
+          class="btn-el"
         >
-          Customer Service
+          Guide/ Review
         </button>
+        
       </nav>
-
+      <!-- <nav id="nav">
+        <a href="index.html" class="active">HOME</a>
+        <a href="map.html">Find&nbsp;Station</a>
+        <a href="menubar.html">Station&nbsp;Option</a>
+        <a href="#frame-3">About&nbsp;us</a>
+        <a href="#frame-4">Customer&nbsp;Service</a>
+      </nav> -->
       <main>
         <div class="w3-bar">
           <button
-            class="w3-bar-item w3-button w3-ripple w3-green"
+            class="btn-el"
             onclick="select('tab','a')"
           >
             Connector types
           </button>
           <button
-            class="w3-bar-item w3-button w3-ripple w3-green"
+            class="btn-el"
             onclick="select('tab','b')"
           >
             Charging Speed
           </button>
           <button
-            class="w3-bar-item w3-button w3-ripple w3-green"
+            class="btn-el"
             onclick="select('tab','c')"
           >
             Payment Options
@@ -81,23 +112,92 @@
             height="500"
             frameborder="0"
           ></iframe>
+          </div>
+          <div id="b" class="tab" style="display: none">
+            <iframe
+              src="https://arcg.is/0y1ubr0"
+              width="100%"
+              height="500"
+              frameborder="0"
+            ></iframe>
+          </div>
+          <div id="c" class="tab" style="display: none">
+            <iframe
+              src="https://arcg.is/0GXeK11"
+              width="100%"
+              height="500"
+              frameborder="0"
+            ></iframe>
+          </div>
+      
+      <!-- Section Container -->
+    <div style="margin-top: 50px; section="container mx-auto px-4 " id="frame-4">
+      <!-- Text Box Container -->
+      <div class="flex flex-wrap">
+        <div class="w-full lg:w-6/12 px-4">
+          <h4 class="my-tx-normal text-3xl font-semibold">Call-to-Action</h4>
+          <h5 class="all-tx-color text-lg mt-0 mb-2 text-gray-700">
+            Ready to charge smarter?
+Join thousands of EV drivers already using EV Charging Station. Find us on any of these platforms, we respond 1-2 business days.
+          </h5>
+          <!-- Social Media Buttons -->
+          <div class="mt-6">
+            <a href="https://x.com/kelvtmoni?t=ikXsxjqxdcTdLJoVXc4ynA&s=08 " target="_blank"><i class="fab fa-twitter  bg-white text-blue-400 shadow-lg font-lg p-3 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-block text-center"></i></a>
+            <a href="https://www.facebook.com/share/1C1UhEkju7/" target="_blank"><i class="fab fa-facebook-square bg-white text-blue-600 shadow-lg font-lg p-3 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-block text-center"></i></a>
+            <a href="https://github.com/kelvtm" target="_blank"><i class="fab fa-github bg-white text-gray-900 shadow-lg font-lg p-3 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-block text-center"></i></a>
+          </div>
         </div>
-        <div id="b" class="tab" style="display: none">
-          <iframe
-            src="https://arcg.is/0y1ubr0"
-            width="100%"
-            height="500"
-            frameborder="0"
-          ></iframe>
+      <!-- List Container -->
+      <div class="w-full lg:w-6/12 px-4">
+          <div class="flex flex-wrap items-top mb-6">
+            <!-- List 1 -->
+            <div class="w-full lg:w-4/12 px-4 ml-auto">
+              <span class="my-tx block uppercase text-gray-600 text-sm font-semibold mb-2">More About Us</span>
+              <ul class="list-unstyled">
+                <li>
+                  <a class="all-tx-color text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                     href="tochukwu-e.netlify.app">About Us</a>
+                </li>
+                <li>
+                  <a class="all-tx-color text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                     href=https://interactive-rating-component-main-tan-rho.vercel.app/>Rate Our Service</a>
+                </li>
+                <li>
+                  <a class="all-tx-color text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                     href="https://github.com/kelvtm">Github</a>
+                </li>
+                <li>
+                  <a class=" all-tx-colortext-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                     href="https://kelvtmoni.netlify.app">Terms &amp; Conditions</a>
+                </li>
+                <li>
+                  <a class="all-tx-color text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                  href="mailto:kelvtmoni@gmail.com">Customer Service</a>
+                </li>
+              </ul>
+            </div>
+            
+          </div>
         </div>
-        <div id="c" class="tab" style="display: none">
-          <iframe
-            src="https://arcg.is/0GXeK11"
-            width="100%"
-            height="500"
-            frameborder="0"
-          ></iframe>
+      </div>
+      <!-- Line Break -->
+      <hr class="my-6 border-gray-400" />
+      <!-- Footer Text -->
+      <div class="flex flex-wrap items-center md:justify-between justify-center">
+        <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+          <div class=" my-tx text-gray-600 font-semibold py-1">
+             2025 UWE student
+            <a
+              href="tochukwu-e.netlify"
+              class="my-name text-gray-600 hover:text-gray-900"
+              >Tochukwu Ezechukwu</a
+            >.
+          </div>
         </div>
+      </div>
+    </section>
+      </main>
+    </div>
       </main>
     </div>
   </body>

@@ -196,8 +196,10 @@ input:checked + .slider::before {
   cursor: pointer;
 }
 .btn-el:hover {
-  transform: scale(1.05);
+  transform: scale(1.1);
   background-color: var(--primary-variant);
+  transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+  /* opacity: 0.9; */
 }
 
 /* Navigation */
@@ -238,7 +240,7 @@ a:focus {
   padding-bottom: 4px; /* space between text and line */
 }
 
-@media (max-width: 798px) {
+@media (max-width: 698px) {
   /* Styles for tablets and smaller screens */
   .grid-container {
     display: flex;

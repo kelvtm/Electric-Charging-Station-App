@@ -39,7 +39,15 @@
         </h1>
         <h2>Power up your journey with fast, reliable EV charging—available 24/7 at your fingertips.</h2>
       </header>
-      <!-- dark month switch -->
+      
+      <div class="flex items-center rounded-md overflow-hidden shadow-sm">
+        <input type="text" placeholder="Search stations..." class="" />
+        <button class="search-button">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
+
+      <!-- dark mode switch -->
     <div class="theme-switch-wrapper">
       <span id="toggle-icon">
         <span class="all-tx-color">Light Mode</span>
@@ -61,7 +69,7 @@
           onclick="location.href='map.html'"
           class="btn-el"
         >
-          Station Map
+          Nearby Chargers
         </button>
         <button
           onclick="location.href='menubar.html'"
